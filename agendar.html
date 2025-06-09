@@ -155,7 +155,7 @@
           initDatepicker(allDates, {});
         });
 
-      function sendWhatsApp(number) { const sel = $('#datesInput').val(); if (!sel) return alert('Selecione ao menos uma data.'); const msg = `Olá! Vim do site de agendamento e gostaria de reservar o apartamento nas datas: ${sel}`; window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`, '_blank'); }
+      function sendWhatsApp(number) { const sel = $('#datesInput').val(); if (!sel) return alert('Selecione ao menos uma data.'); const msg = `Olá! Vim do site de agendamento e gostaria de reservar a casa mobiliada nas datas: ${sel}`; window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`, '_blank'); }
       $('#reserveBtn1').click(() => sendWhatsApp(attendant1Number));
       $('#reserveBtn2').click(() => sendWhatsApp(attendant2Number));
     });
